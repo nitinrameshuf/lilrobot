@@ -19,3 +19,6 @@ Communication Paths:
     - Battery Level
     - CPU Usage (Compute power, Voltage, Amp)
     - Error messages
+
+Serial Formats:
+<COMMAND>:<ARG1>:<ARG2>:...<ARGN>\n
