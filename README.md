@@ -20,6 +20,6 @@ Communication Paths:
     - CPU Usage (Compute power, Voltage, Amp)
     - Error messages
 
-Serial Formats:
-COMMAND:ARG1:ARG2:...ARGN
-Example: S:1:120
+Serial Formats
+    - COMMAND:ARG1:ARG2:...ARGN
+    - Example: S:1:120
