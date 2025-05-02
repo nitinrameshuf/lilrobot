@@ -21,4 +21,5 @@ Communication Paths:
     - Error messages
 
 Serial Formats:
-<COMMAND>:<ARG1>:<ARG2>:...<ARGN>\n
+COMMAND:ARG1:ARG2:...ARGN
+Example: S:1:120
