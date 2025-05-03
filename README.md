@@ -1,7 +1,7 @@
 # lilrobot
 Log path : /var/log/lilrobot
 
-Communication Paths:
+Function Mapping:
 1) Command Center to Sentry (via Engine)
     - DC motor Commands
     - Servo Commands
