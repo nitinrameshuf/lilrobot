@@ -2,6 +2,13 @@
 Log path : /var/log/lilrobot
 
 Function Mapping:
+1) Sentry
+    - Command & Response
+        - Poll for new commands
+    - Servo Control
+        - Poll the serial for 
+
+Communication Flows:
 1) Command Center to Sentry (via Engine)
     - DC motor Commands
     - Servo Commands
