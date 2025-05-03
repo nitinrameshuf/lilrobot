@@ -5,6 +5,7 @@ Communication Paths:
 1) Command Center to Sentry (via Engine)
     - DC motor Commands
     - Servo Commands
+        -  Engine_Command:Sentry_Command:Servo_Number:Servo_Angle (Example: S:1:120)
 
 2) Command Center to Engine
     - Terrain modes
