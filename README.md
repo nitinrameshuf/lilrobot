@@ -28,6 +28,9 @@ Communication Flows:
     - CPU Usage (Compute power, Voltage, Amp)
     - Error messages
 
+4) Backup
+    - Log Backup scripts
+ 
 Serial Formats
     - COMMAND:ARG1:ARG2:...ARGN
     - Example: S:1:120
