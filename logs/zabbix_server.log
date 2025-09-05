@@ -1,0 +1,242 @@
+ 13065:20250831:002304.145 executing housekeeper
+ 13065:20250831:002304.193 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.022274 sec, idle for 1 hour(s)]
+ 13065:20250831:012304.294 executing housekeeper
+ 13065:20250831:012304.343 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.024462 sec, idle for 1 hour(s)]
+ 13065:20250831:022304.433 executing housekeeper
+ 13065:20250831:022304.480 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021452 sec, idle for 1 hour(s)]
+ 13065:20250831:032304.556 executing housekeeper
+ 13065:20250831:032304.603 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021781 sec, idle for 1 hour(s)]
+ 13065:20250831:042304.678 executing housekeeper
+ 13065:20250831:042304.727 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.023314 sec, idle for 1 hour(s)]
+ 13065:20250831:052304.804 executing housekeeper
+ 13065:20250831:052304.850 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.020997 sec, idle for 1 hour(s)]
+ 13065:20250831:062304.950 executing housekeeper
+ 13065:20250831:062304.998 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.023458 sec, idle for 1 hour(s)]
+ 13065:20250831:072305.004 executing housekeeper
+ 13065:20250831:072305.051 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021025 sec, idle for 1 hour(s)]
+ 13065:20250831:082305.148 executing housekeeper
+ 13065:20250831:082305.194 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021365 sec, idle for 1 hour(s)]
+ 13065:20250831:092305.292 executing housekeeper
+ 13065:20250831:092305.339 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.022160 sec, idle for 1 hour(s)]
+ 13065:20250831:102305.357 executing housekeeper
+ 13065:20250831:102305.407 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.024872 sec, idle for 1 hour(s)]
+ 13065:20250831:112305.450 executing housekeeper
+ 13065:20250831:112305.500 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.025446 sec, idle for 1 hour(s)]
+ 13065:20250831:122305.585 executing housekeeper
+ 13065:20250831:122305.633 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.023419 sec, idle for 1 hour(s)]
+ 13065:20250831:132305.660 executing housekeeper
+ 13065:20250831:132305.709 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 1 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.023849 sec, idle for 1 hour(s)]
+ 13065:20250831:142305.733 executing housekeeper
+ 13065:20250831:142305.779 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.020663 sec, idle for 1 hour(s)]
+ 13065:20250831:152305.838 executing housekeeper
+ 13065:20250831:152305.884 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021100 sec, idle for 1 hour(s)]
+ 13065:20250831:162305.950 executing housekeeper
+ 13065:20250831:162305.996 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.020825 sec, idle for 1 hour(s)]
+ 13065:20250831:172306.061 executing housekeeper
+ 13065:20250831:172306.107 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.020895 sec, idle for 1 hour(s)]
+ 13065:20250831:182306.131 executing housekeeper
+ 13065:20250831:182306.178 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021857 sec, idle for 1 hour(s)]
+ 13065:20250831:192306.240 executing housekeeper
+ 13065:20250831:192306.287 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021168 sec, idle for 1 hour(s)]
+ 13065:20250831:202306.293 executing housekeeper
+ 13065:20250831:202306.343 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.024449 sec, idle for 1 hour(s)]
+ 13065:20250831:212306.372 executing housekeeper
+ 13065:20250831:212306.418 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021948 sec, idle for 1 hour(s)]
+ 13065:20250831:222306.468 executing housekeeper
+ 13065:20250831:222306.515 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021676 sec, idle for 1 hour(s)]
+ 13065:20250831:232306.571 executing housekeeper
+ 13065:20250831:232306.619 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.023474 sec, idle for 1 hour(s)]
+ 13065:20250901:002306.721 executing housekeeper
+ 13065:20250901:002306.772 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.025071 sec, idle for 1 hour(s)]
+ 13065:20250901:012306.872 executing housekeeper
+ 13065:20250901:012306.925 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 1 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.026921 sec, idle for 1 hour(s)]
+ 13065:20250901:022307.025 executing housekeeper
+ 13065:20250901:022307.074 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.024119 sec, idle for 1 hour(s)]
+ 13065:20250901:032307.098 executing housekeeper
+ 13065:20250901:032307.144 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021025 sec, idle for 1 hour(s)]
+ 13065:20250901:042307.244 executing housekeeper
+ 13065:20250901:042307.291 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021989 sec, idle for 1 hour(s)]
+ 13065:20250901:052307.374 executing housekeeper
+ 13065:20250901:052307.422 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.022206 sec, idle for 1 hour(s)]
+ 13065:20250901:062307.523 executing housekeeper
+ 13065:20250901:062307.573 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.024658 sec, idle for 1 hour(s)]
+ 13065:20250901:072307.610 executing housekeeper
+ 13065:20250901:072307.658 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.022142 sec, idle for 1 hour(s)]
+ 13065:20250901:082307.733 executing housekeeper
+ 13065:20250901:082307.780 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021385 sec, idle for 1 hour(s)]
+ 13065:20250901:092307.833 executing housekeeper
+ 13065:20250901:092307.894 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 1 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.031875 sec, idle for 1 hour(s)]
+ 13065:20250901:102307.972 executing housekeeper
+ 13065:20250901:102308.019 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021878 sec, idle for 1 hour(s)]
+ 13065:20250901:112308.111 executing housekeeper
+ 13065:20250901:112308.157 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021050 sec, idle for 1 hour(s)]
+ 13065:20250901:122308.258 executing housekeeper
+ 13065:20250901:122308.309 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.025743 sec, idle for 1 hour(s)]
+ 13065:20250901:132308.353 executing housekeeper
+ 13065:20250901:132308.400 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021131 sec, idle for 1 hour(s)]
+ 13065:20250901:142308.412 executing housekeeper
+ 13065:20250901:142308.462 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.025040 sec, idle for 1 hour(s)]
+ 13065:20250901:152308.550 executing housekeeper
+ 13065:20250901:152308.596 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021361 sec, idle for 1 hour(s)]
+ 13065:20250901:162308.697 executing housekeeper
+ 13065:20250901:162308.746 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.024167 sec, idle for 1 hour(s)]
+ 13065:20250901:172308.847 executing housekeeper
+ 13065:20250901:172308.894 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021951 sec, idle for 1 hour(s)]
+ 13065:20250901:182308.995 executing housekeeper
+ 13065:20250901:182309.043 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.023301 sec, idle for 1 hour(s)]
+ 13065:20250901:192309.140 executing housekeeper
+ 13065:20250901:192309.187 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.022349 sec, idle for 1 hour(s)]
+ 13065:20250901:202309.242 executing housekeeper
+ 13065:20250901:202309.290 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.022801 sec, idle for 1 hour(s)]
+ 13065:20250901:212309.376 executing housekeeper
+ 13065:20250901:212309.427 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.025111 sec, idle for 1 hour(s)]
+ 13065:20250901:222309.465 executing housekeeper
+ 13065:20250901:222309.514 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.024127 sec, idle for 1 hour(s)]
+ 13065:20250901:232309.566 executing housekeeper
+ 13065:20250901:232309.615 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.022786 sec, idle for 1 hour(s)]
+ 13065:20250902:002309.685 executing housekeeper
+ 13065:20250902:002309.738 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 1 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.028027 sec, idle for 1 hour(s)]
+ 13065:20250902:012309.742 executing housekeeper
+ 13065:20250902:012309.788 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021659 sec, idle for 1 hour(s)]
+ 13065:20250902:022309.804 executing housekeeper
+ 13065:20250902:022309.850 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.020873 sec, idle for 1 hour(s)]
+ 13065:20250902:032309.860 executing housekeeper
+ 13065:20250902:032309.907 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.020717 sec, idle for 1 hour(s)]
+ 13065:20250902:042309.980 executing housekeeper
+ 13065:20250902:042310.027 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021738 sec, idle for 1 hour(s)]
+ 13065:20250902:052310.092 executing housekeeper
+ 13065:20250902:052310.139 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021960 sec, idle for 1 hour(s)]
+ 13065:20250902:062310.236 executing housekeeper
+ 13065:20250902:062310.285 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.024034 sec, idle for 1 hour(s)]
+ 13065:20250902:072310.371 executing housekeeper
+ 13065:20250902:072310.417 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021295 sec, idle for 1 hour(s)]
+ 13065:20250902:082310.517 executing housekeeper
+ 13065:20250902:082310.564 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.022020 sec, idle for 1 hour(s)]
+ 13065:20250902:092310.608 executing housekeeper
+ 13065:20250902:092310.657 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 1 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.023529 sec, idle for 1 hour(s)]
+ 13065:20250902:102310.758 executing housekeeper
+ 13065:20250902:102310.805 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021529 sec, idle for 1 hour(s)]
+ 13065:20250902:112310.818 executing housekeeper
+ 13065:20250902:112310.868 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.024383 sec, idle for 1 hour(s)]
+ 13065:20250902:122310.968 executing housekeeper
+ 13065:20250902:122311.015 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021754 sec, idle for 1 hour(s)]
+ 13065:20250902:132311.115 executing housekeeper
+ 13065:20250902:132311.163 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.022134 sec, idle for 1 hour(s)]
+ 13065:20250902:142311.242 executing housekeeper
+ 13065:20250902:142311.302 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.030273 sec, idle for 1 hour(s)]
+ 13065:20250902:152311.402 executing housekeeper
+ 13065:20250902:152311.449 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021822 sec, idle for 1 hour(s)]
+ 13065:20250902:162311.528 executing housekeeper
+ 13065:20250902:162311.582 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.029296 sec, idle for 1 hour(s)]
+ 13065:20250902:172311.682 executing housekeeper
+ 13065:20250902:172311.730 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.022266 sec, idle for 1 hour(s)]
+ 13065:20250902:182311.774 executing housekeeper
+ 13065:20250902:182311.826 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 1 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.027058 sec, idle for 1 hour(s)]
+ 13065:20250902:192311.827 executing housekeeper
+ 13065:20250902:192311.874 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021106 sec, idle for 1 hour(s)]
+ 13065:20250902:202311.963 executing housekeeper
+ 13065:20250902:202312.011 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.023870 sec, idle for 1 hour(s)]
+ 13065:20250902:212312.015 executing housekeeper
+ 13065:20250902:212312.061 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.022088 sec, idle for 1 hour(s)]
+ 13065:20250902:222312.156 executing housekeeper
+ 13065:20250902:222312.204 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021013 sec, idle for 1 hour(s)]
+ 13065:20250902:232312.298 executing housekeeper
+ 13065:20250902:232312.344 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.022020 sec, idle for 1 hour(s)]
+ 13065:20250903:002312.412 executing housekeeper
+ 13065:20250903:002312.463 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.024695 sec, idle for 1 hour(s)]
+ 13065:20250903:012312.563 executing housekeeper
+ 13065:20250903:012312.610 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.020936 sec, idle for 1 hour(s)]
+ 13065:20250903:022312.668 executing housekeeper
+ 13065:20250903:022312.715 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.020927 sec, idle for 1 hour(s)]
+ 13065:20250903:032312.764 executing housekeeper
+ 13065:20250903:032312.811 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021775 sec, idle for 1 hour(s)]
+ 13065:20250903:042312.860 executing housekeeper
+ 13065:20250903:042312.910 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.024447 sec, idle for 1 hour(s)]
+ 13065:20250903:052312.913 executing housekeeper
+ 13065:20250903:052312.963 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.025210 sec, idle for 1 hour(s)]
+ 13065:20250903:062313.052 executing housekeeper
+ 13065:20250903:062313.098 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.020285 sec, idle for 1 hour(s)]
+ 13065:20250903:072313.198 executing housekeeper
+ 13065:20250903:072313.245 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021684 sec, idle for 1 hour(s)]
+ 13065:20250903:082313.311 executing housekeeper
+ 13065:20250903:082313.358 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.022230 sec, idle for 1 hour(s)]
+ 13065:20250903:092313.459 executing housekeeper
+ 13065:20250903:092313.506 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021741 sec, idle for 1 hour(s)]
+ 13065:20250903:102313.590 executing housekeeper
+ 13065:20250903:102313.637 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021774 sec, idle for 1 hour(s)]
+ 13065:20250903:112313.662 executing housekeeper
+ 13065:20250903:112313.711 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 1 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.024524 sec, idle for 1 hour(s)]
+ 13065:20250903:122313.800 executing housekeeper
+ 13065:20250903:122313.847 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021419 sec, idle for 1 hour(s)]
+ 13065:20250903:132313.852 executing housekeeper
+ 13065:20250903:132313.899 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.020781 sec, idle for 1 hour(s)]
+ 13065:20250903:142313.967 executing housekeeper
+ 13065:20250903:142314.014 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021811 sec, idle for 1 hour(s)]
+ 13065:20250903:152314.114 executing housekeeper
+ 13065:20250903:152314.162 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.024104 sec, idle for 1 hour(s)]
+ 13065:20250903:162314.245 executing housekeeper
+ 13065:20250903:162314.294 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.024116 sec, idle for 1 hour(s)]
+ 13065:20250903:172314.311 executing housekeeper
+ 13065:20250903:172314.359 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.025107 sec, idle for 1 hour(s)]
+ 13065:20250903:182314.408 executing housekeeper
+ 13065:20250903:182314.455 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021304 sec, idle for 1 hour(s)]
+ 13065:20250903:192314.556 executing housekeeper
+ 13065:20250903:192314.605 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.023531 sec, idle for 1 hour(s)]
+ 13065:20250903:202314.652 executing housekeeper
+ 13065:20250903:202314.703 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.025145 sec, idle for 1 hour(s)]
+ 13065:20250903:212314.788 executing housekeeper
+ 13065:20250903:212314.838 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.024047 sec, idle for 1 hour(s)]
+ 13065:20250903:222314.884 executing housekeeper
+ 13065:20250903:222314.934 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.024752 sec, idle for 1 hour(s)]
+ 13065:20250903:232315.035 executing housekeeper
+ 13065:20250903:232315.082 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021427 sec, idle for 1 hour(s)]
+ 13065:20250904:002315.178 executing housekeeper
+ 13065:20250904:002315.226 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021765 sec, idle for 1 hour(s)]
+ 13065:20250904:012315.299 executing housekeeper
+ 13065:20250904:012315.345 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021664 sec, idle for 1 hour(s)]
+ 13065:20250904:022315.445 executing housekeeper
+ 13065:20250904:022315.492 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.022087 sec, idle for 1 hour(s)]
+ 13065:20250904:032315.524 executing housekeeper
+ 13065:20250904:032315.570 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021496 sec, idle for 1 hour(s)]
+ 13065:20250904:042315.671 executing housekeeper
+ 13065:20250904:042315.719 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.022786 sec, idle for 1 hour(s)]
+ 13065:20250904:052315.782 executing housekeeper
+ 13065:20250904:052315.829 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021057 sec, idle for 1 hour(s)]
+ 13065:20250904:062315.929 executing housekeeper
+ 13065:20250904:062315.976 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021285 sec, idle for 1 hour(s)]
+ 13065:20250904:072316.076 executing housekeeper
+ 13065:20250904:072316.126 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.024663 sec, idle for 1 hour(s)]
+ 13065:20250904:082316.180 executing housekeeper
+ 13065:20250904:082316.230 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.024258 sec, idle for 1 hour(s)]
+ 13065:20250904:092316.330 executing housekeeper
+ 13065:20250904:092316.377 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.023386 sec, idle for 1 hour(s)]
+ 13065:20250904:102316.479 executing housekeeper
+ 13065:20250904:102316.525 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021312 sec, idle for 1 hour(s)]
+ 13065:20250904:112316.582 executing housekeeper
+ 13065:20250904:112316.630 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.022739 sec, idle for 1 hour(s)]
+ 13065:20250904:122316.730 executing housekeeper
+ 13065:20250904:122316.776 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.020495 sec, idle for 1 hour(s)]
+ 13065:20250904:132316.876 executing housekeeper
+ 13065:20250904:132316.922 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021206 sec, idle for 1 hour(s)]
+ 13065:20250904:142317.023 executing housekeeper
+ 13065:20250904:142317.073 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.025215 sec, idle for 1 hour(s)]
+ 13065:20250904:152317.173 executing housekeeper
+ 13065:20250904:152317.223 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.024436 sec, idle for 1 hour(s)]
+ 13065:20250904:162317.303 executing housekeeper
+ 13065:20250904:162317.356 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.029465 sec, idle for 1 hour(s)]
+ 13065:20250904:172317.396 executing housekeeper
+ 13065:20250904:172317.445 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.024513 sec, idle for 1 hour(s)]
+ 13065:20250904:182317.500 executing housekeeper
+ 13065:20250904:182317.550 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.023656 sec, idle for 1 hour(s)]
+ 13065:20250904:192317.580 executing housekeeper
+ 13065:20250904:192317.627 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021768 sec, idle for 1 hour(s)]
+ 13065:20250904:202317.728 executing housekeeper
+ 13065:20250904:202317.781 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.027707 sec, idle for 1 hour(s)]
+ 13065:20250904:212317.787 executing housekeeper
+ 13065:20250904:212317.835 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.022008 sec, idle for 1 hour(s)]
+ 13065:20250904:222317.920 executing housekeeper
+ 13065:20250904:222317.966 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021533 sec, idle for 1 hour(s)]
+ 13065:20250904:232317.980 executing housekeeper
+ 13065:20250904:232318.028 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.022406 sec, idle for 1 hour(s)]
+ 13065:20250905:002318.129 executing housekeeper
+ 13065:20250905:002318.178 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.024744 sec, idle for 1 hour(s)]
