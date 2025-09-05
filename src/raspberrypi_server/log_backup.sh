@@ -2,14 +2,21 @@
 # Backup Sentry Tower Robot  logs to GitHub
 
 # ==== CONFIGURATION ====
-SRC_DIR="$LILROBOT/src"  
-LOG_FILES="/var/log/zabbix/zabbix_server.log /var/log/zabbix/zabbix_agentd.log"
+LOG_FILES="/var/log/zabbix/zabbix_server.log"
 TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
 
-cd
+cd "$LILROBOT/logs" || exit 1
+find . -mindepth 1 -delete
+
+cp $LOG_FILES .
+
+sleep 1
+git pull
+sleep 2
 
 git add .
-git commit -m "Routine Log Backup"
+git commit -m "Server Tower Actual - $TIMESTAMP"
 git push origin main
 
-python3 
+# python3 "$LILROBOT/src/raspberrypi_server/status_indicator.py" --status "Backup Complete"
+python3 "$LILROBOT/src/raspberrypi_server/oled_tester.py"
