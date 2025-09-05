@@ -509,3 +509,5 @@
   1081:20250905:021819.005 housekeeper [deleted 55 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 1.904290 sec, idle for 1 hour(s)]
   1081:20250905:031819.106 executing housekeeper
   1081:20250905:031819.152 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021063 sec, idle for 1 hour(s)]
+  1081:20250905:041819.191 executing housekeeper
+  1081:20250905:041819.237 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021283 sec, idle for 1 hour(s)]
