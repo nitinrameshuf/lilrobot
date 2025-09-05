@@ -1,5 +1,5 @@
 #!/bin/bash
-# Backup Sentry Tower Robot  logs to GitHub
+# Backup Sentry Tower Actual logs to GitHub
 
 # ==== CONFIGURATION ====
 LOG_FILES="/var/log/zabbix/zabbix_server.log"
@@ -15,7 +15,7 @@ git pull
 sleep 2
 
 git add .
-git commit -m "Server Tower Actual - $TIMESTAMP"
+git commit -m "Sentry Tower Actual - $TIMESTAMP"
 git push origin main
 
 # python3 "$LILROBOT/src/raspberrypi_server/status_indicator.py" --status "Backup Complete"
