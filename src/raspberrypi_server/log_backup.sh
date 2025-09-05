@@ -6,7 +6,7 @@ LOG_FILES="/var/log/zabbix/zabbix_server.log"
 TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
 
 cd "$LILROBOT/logs" || exit 1
-find . -mindepth 1 -delete
+find . -type f -name "zabbix_server.log" -delete
 
 cp $LOG_FILES .
 
@@ -20,3 +20,5 @@ git push origin main
 
 # python3 "$LILROBOT/src/raspberrypi_server/status_indicator.py" --status "Backup Complete"
 python3 "$LILROBOT/src/raspberrypi_server/oled_tester.py"
+
+# ==== END CONFIGURATION ====

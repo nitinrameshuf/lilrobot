@@ -187,7 +187,7 @@ def main():
     print("Running comprehensive tests...")
     
     # Run comprehensive tests
-    test_128x32_display(oled)
+    # test_128x32_display(oled) # Uncomment to run full test suite
     
     print("\n" + "="*50)
     print("TESTING YOUR ORIGINAL TEXT")
