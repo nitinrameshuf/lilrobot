@@ -14,10 +14,13 @@ sleep 1
 git pull
 sleep 2
 
-git add .
-git commit -m "Sentry Tower Actual - $TIMESTAMP"
-git push origin main
-
+if [[ -n $(git status --porcelain) ]]; then
+    git add .
+    git commit -m "Sentry Tower Actual - $TIMESTAMP"
+    git push origin main
+else
+    echo "No changes detected. Skipping commit"
+fi
 # python3 "$LILROBOT/src/raspberrypi_server/status_indicator.py" --status "Backup Complete"
 python3 "$LILROBOT/src/raspberrypi_server/oled_tester.py"
 
