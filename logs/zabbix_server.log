@@ -615,3 +615,9 @@
   1133:20250908:134015.162 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.029753 sec, idle for 1 hour(s)]
   1133:20250908:144015.171 executing housekeeper
   1133:20250908:144015.218 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021649 sec, idle for 1 hour(s)]
+  1133:20250908:154015.318 executing housekeeper
+  1133:20250908:154015.366 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.022410 sec, idle for 1 hour(s)]
+  1133:20250908:164015.465 executing housekeeper
+  1133:20250908:164015.515 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.024156 sec, idle for 1 hour(s)]
+  1133:20250908:174015.531 executing housekeeper
+  1133:20250908:174015.579 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.022541 sec, idle for 1 hour(s)]
