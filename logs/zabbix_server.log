@@ -633,3 +633,21 @@
   1133:20250908:224016.332 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.023617 sec, idle for 1 hour(s)]
   1133:20250908:234016.431 executing housekeeper
   1133:20250908:234016.477 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021470 sec, idle for 1 hour(s)]
+  1133:20250909:004016.556 executing housekeeper
+  1133:20250909:004016.605 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 1 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.023609 sec, idle for 1 hour(s)]
+  1133:20250909:014016.651 executing housekeeper
+  1133:20250909:014016.705 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 1 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.028592 sec, idle for 1 hour(s)]
+  1133:20250909:024016.804 executing housekeeper
+  1133:20250909:024016.851 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.022201 sec, idle for 1 hour(s)]
+  1133:20250909:034016.899 executing housekeeper
+  1133:20250909:034016.945 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021527 sec, idle for 1 hour(s)]
+  1133:20250909:044016.995 executing housekeeper
+  1133:20250909:044017.045 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.024426 sec, idle for 1 hour(s)]
+  1133:20250909:054017.067 executing housekeeper
+  1133:20250909:054017.121 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 2 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.028893 sec, idle for 1 hour(s)]
+  1133:20250909:064017.174 executing housekeeper
+  1133:20250909:064017.222 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.022771 sec, idle for 1 hour(s)]
+  1133:20250909:074017.277 executing housekeeper
+  1133:20250909:074017.324 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.022056 sec, idle for 1 hour(s)]
+  1133:20250909:084017.423 executing housekeeper
+  1133:20250909:084017.471 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.022400 sec, idle for 1 hour(s)]
