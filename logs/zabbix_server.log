@@ -945,3 +945,258 @@ connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection re
  37875:20250910:225549.622 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.025046 sec, idle for 1 hour(s)]
  37875:20250910:235549.699 executing housekeeper
  37875:20250910:235549.746 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021307 sec, idle for 1 hour(s)]
+  1040:20250911:002639.892 Starting Zabbix Server. Zabbix 7.4.2 (revision 7aa4e0782fe).
+  1040:20250911:002639.909 ****** Enabled features ******
+  1040:20250911:002639.909 SNMP monitoring:           YES
+  1040:20250911:002639.909 IPMI monitoring:           YES
+  1040:20250911:002639.909 Web monitoring:            YES
+  1040:20250911:002639.909 VMware monitoring:         YES
+  1040:20250911:002639.909 SMTP authentication:       YES
+  1040:20250911:002639.909 ODBC:                      YES
+  1040:20250911:002639.909 SSH support:               YES
+  1040:20250911:002639.909 IPv6 support:              YES
+  1040:20250911:002639.909 TLS support:               YES
+  1040:20250911:002639.909 ******************************
+  1040:20250911:002639.909 using configuration file: /etc/zabbix/zabbix_server.conf
+  1040:20250911:002640.269 current database version (mandatory/optional): 07040000/07040000
+  1040:20250911:002640.269 required mandatory version: 07040000
+  1046:20250911:002640.291 starting HA manager
+  1046:20250911:002640.329 HA manager started in active mode
+  1040:20250911:002640.335 server #0 started [main process]
+  1048:20250911:002640.336 server #1 started [service manager #1]
+  1049:20250911:002640.338 server #2 started [configuration syncer #1]
+  1058:20250911:002640.918 server #3 started [alert manager #1]
+  1059:20250911:002640.920 server #4 started [alerter #1]
+  1061:20250911:002640.921 server #5 started [alerter #2]
+  1062:20250911:002640.923 server #6 started [alerter #3]
+  1063:20250911:002640.925 server #7 started [preprocessing manager #1]
+  1064:20250911:002640.926 server #8 started [lld manager #1]
+  1063:20250911:002640.927 [2] thread started [preprocessing worker #2]
+  1063:20250911:002640.927 [1] thread started [preprocessing worker #1]
+  1063:20250911:002640.927 [3] thread started [preprocessing worker #3]
+  1063:20250911:002640.927 [4] thread started [preprocessing worker #4]
+  1063:20250911:002640.928 [5] thread started [preprocessing worker #5]
+  1063:20250911:002640.928 [6] thread started [preprocessing worker #6]
+  1063:20250911:002640.928 [7] thread started [preprocessing worker #7]
+  1063:20250911:002640.928 [10] thread started [preprocessing worker #10]
+  1063:20250911:002640.928 [11] thread started [preprocessing worker #11]
+  1063:20250911:002640.928 [9] thread started [preprocessing worker #9]
+  1063:20250911:002640.928 [13] thread started [preprocessing worker #13]
+  1063:20250911:002640.928 [12] thread started [preprocessing worker #12]
+  1063:20250911:002640.928 [15] thread started [preprocessing worker #15]
+  1063:20250911:002640.928 [16] thread started [preprocessing worker #16]
+  1063:20250911:002640.928 [14] thread started [preprocessing worker #14]
+  1063:20250911:002640.928 [8] thread started [preprocessing worker #8]
+  1081:20250911:002640.929 server #9 started [lld worker #1]
+  1082:20250911:002640.930 server #10 started [lld worker #2]
+  1086:20250911:002640.935 server #12 started [timer #1]
+  1084:20250911:002640.936 server #11 started [housekeeper #1]
+  1090:20250911:002640.943 server #14 started [browser poller #1]
+  1088:20250911:002640.944 server #13 started [http poller #1]
+  1091:20250911:002640.948 server #15 started [discovery manager #1]
+  1092:20250911:002640.949 server #16 started [history syncer #1]
+  1096:20250911:002640.956 server #17 started [history syncer #2]
+  1098:20250911:002640.964 server #18 started [history syncer #3]
+  1099:20250911:002640.967 server #19 started [history syncer #4]
+  1103:20250911:002640.981 server #21 started [proxy poller #1]
+  1101:20250911:002640.984 server #20 started [escalator #1]
+  1104:20250911:002640.985 server #22 started [self-monitoring #1]
+  1107:20250911:002640.993 server #24 started [poller #1]
+  1106:20250911:002640.994 server #23 started [task manager #1]
+  1108:20250911:002641.001 server #25 started [poller #2]
+  1111:20250911:002641.003 server #26 started [poller #3]
+  1112:20250911:002641.021 server #27 started [poller #4]
+  1113:20250911:002641.027 server #28 started [poller #5]
+  1115:20250911:002641.035 server #29 started [unreachable poller #1]
+  1116:20250911:002641.039 server #30 started [trapper #1]
+  1117:20250911:002641.042 server #31 started [trapper #2]
+  1120:20250911:002641.051 server #32 started [trapper #3]
+  1121:20250911:002641.058 server #33 started [trapper #4]
+  1123:20250911:002641.062 server #34 started [trapper #5]
+  1124:20250911:002641.065 server #35 started [icmp pinger #1]
+  1125:20250911:002641.068 server #36 started [alert syncer #1]
+  1127:20250911:002641.072 server #37 started [history poller #1]
+  1130:20250911:002641.081 server #38 started [history poller #2]
+  1133:20250911:002641.093 server #39 started [history poller #3]
+  1135:20250911:002641.103 server #40 started [history poller #4]
+  1137:20250911:002641.117 server #41 started [history poller #5]
+  1139:20250911:002641.129 server #42 started [availability manager #1]
+  1091:20250911:002641.142 thread started [discovery worker #1]
+  1091:20250911:002641.142 thread started [discovery worker #5]
+  1091:20250911:002641.142 thread started [discovery worker #3]
+  1091:20250911:002641.142 thread started [discovery worker #4]
+  1146:20250911:002641.143 server #43 started [trigger housekeeper #1]
+  1091:20250911:002641.144 thread started [discovery worker #2]
+  1148:20250911:002641.152 server #44 started [odbc poller #1]
+  1150:20250911:002641.158 server #46 started [agent poller #1]
+  1150:20250911:002641.159 thread started
+  1149:20250911:002641.159 server #45 started [http agent poller #1]
+  1149:20250911:002641.160 thread started
+  1153:20250911:002641.160 server #47 started [snmp poller #1]
+  1153:20250911:002641.161 thread started
+  1155:20250911:002641.163 server #48 started [configuration syncer worker #1]
+  1156:20250911:002641.166 server #49 started [internal poller #1]
+  1158:20250911:002641.168 server #50 started [proxy group manager #1]
+  1084:20250911:022105.347 executing housekeeper
+  1084:20250911:022108.241 housekeeper [deleted 91 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 2.867742 sec, idle for 1 hour(s)]
+  1084:20250911:032108.337 executing housekeeper
+  1084:20250911:032108.388 housekeeper [deleted 31 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.026331 sec, idle for 1 hour(s)]
+  1084:20250911:042108.468 executing housekeeper
+  1084:20250911:042108.515 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021332 sec, idle for 1 hour(s)]
+  1084:20250911:052108.599 executing housekeeper
+  1084:20250911:052108.645 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.020790 sec, idle for 1 hour(s)]
+  1084:20250911:062108.709 executing housekeeper
+  1084:20250911:062108.759 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.025437 sec, idle for 1 hour(s)]
+  1106:20250911:064105.867 [Z3005] query failed: [0] PGRES_FATAL_ERROR:SSL connection has been closed unexpectedly
+ [select taskid,type,clock,ttl,proxyid from task where status in (1,2) order by taskid]
+  1106:20250911:064105.868 [Z3001] connection to database 'zabbix' failed: [0] connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+  1106:20250911:064105.868 database is down: reconnecting in 10 seconds
+  1040:20250911:064106.293 Got signal [signal:15(SIGTERM),sender_pid:5043,sender_uid:0,reason:0]. Exiting ...
+  1061:20250911:064106.294 cannot read alert manager service request
+  1059:20250911:064106.294 cannot read alert manager service request
+  1125:20250911:064106.294 cannot read alert syncer request
+  1062:20250911:064106.294 cannot read alert manager service request
+  1096:20250911:064106.295 syncing history data in progress... 
+  1096:20250911:064106.295 syncing history data done
+  1092:20250911:064106.296 [Z3005] query failed: [0] PGRES_FATAL_ERROR:SSL connection has been closed unexpectedly
+ [begin;]
+  1149:20250911:064106.300 thread stopped
+  1046:20250911:064106.301 HA manager has been paused
+  1082:20250911:064106.301 cannot read LLD manager service request
+  1081:20250911:064106.303 cannot read LLD manager service request
+  1153:20250911:064106.304 thread stopped
+  1150:20250911:064106.305 thread stopped
+  1063:20250911:064106.305 [15] thread stopped [preprocessing worker #15]
+  1063:20250911:064106.306 [16] thread stopped [preprocessing worker #16]
+  1046:20250911:064106.306 [Z3005] query failed: [0] PGRES_FATAL_ERROR:SSL connection has been closed unexpectedly
+ [begin;]
+  1063:20250911:064106.306 [3] thread stopped [preprocessing worker #3]
+  1063:20250911:064106.306 [14] thread stopped [preprocessing worker #14]
+  1063:20250911:064106.306 [2] thread stopped [preprocessing worker #2]
+  1063:20250911:064106.306 [8] thread stopped [preprocessing worker #8]
+  1063:20250911:064106.307 [7] thread stopped [preprocessing worker #7]
+  1063:20250911:064106.307 [11] thread stopped [preprocessing worker #11]
+  1063:20250911:064106.307 [13] thread stopped [preprocessing worker #13]
+  1063:20250911:064106.307 [9] thread stopped [preprocessing worker #9]
+  1063:20250911:064106.307 [12] thread stopped [preprocessing worker #12]
+  1063:20250911:064106.307 [4] thread stopped [preprocessing worker #4]
+  1063:20250911:064106.307 [10] thread stopped [preprocessing worker #10]
+  1063:20250911:064106.307 [5] thread stopped [preprocessing worker #5]
+  1091:20250911:064106.308 thread stopped [discovery worker #1]
+  1091:20250911:064106.308 thread stopped [discovery worker #4]
+  1091:20250911:064106.308 thread stopped [discovery worker #5]
+  1091:20250911:064106.308 thread stopped [discovery worker #3]
+  1091:20250911:064106.308 thread stopped [discovery worker #2]
+  1063:20250911:064106.309 [6] thread stopped [preprocessing worker #6]
+  1063:20250911:064106.312 [1] thread stopped [preprocessing worker #1]
+  1092:20250911:064106.337 syncing trend data in progress... 
+  1096:20250911:064106.396 [Z3005] query failed: [0] PGRES_FATAL_ERROR:SSL connection has been closed unexpectedly
+ [begin;]
+  1098:20250911:064106.396 [Z3005] query failed: [0] PGRES_FATAL_ERROR:SSL connection has been closed unexpectedly
+ [begin;]
+  1099:20250911:064106.396 [Z3005] query failed: [0] PGRES_FATAL_ERROR:SSL connection has been closed unexpectedly
+ [begin;]
+  1046:20250911:064106.562 HA manager has been stopped
+  1040:20250911:064106.591 syncing trend data... 100.000000%
+  1040:20250911:064106.591 syncing trend data done
+  1040:20250911:064106.593 Zabbix Server stopped. Zabbix 7.4.2 (revision 7aa4e0782fe).
+  5094:20250911:064106.631 Starting Zabbix Server. Zabbix 7.4.2 (revision 7aa4e0782fe).
+  5094:20250911:064106.631 ****** Enabled features ******
+  5094:20250911:064106.631 SNMP monitoring:           YES
+  5094:20250911:064106.631 IPMI monitoring:           YES
+  5094:20250911:064106.631 Web monitoring:            YES
+  5094:20250911:064106.631 VMware monitoring:         YES
+  5094:20250911:064106.631 SMTP authentication:       YES
+  5094:20250911:064106.631 ODBC:                      YES
+  5094:20250911:064106.631 SSH support:               YES
+  5094:20250911:064106.631 IPv6 support:              YES
+  5094:20250911:064106.631 TLS support:               YES
+  5094:20250911:064106.631 ******************************
+  5094:20250911:064106.631 using configuration file: /etc/zabbix/zabbix_server.conf
+  5094:20250911:064106.667 current database version (mandatory/optional): 07040000/07040000
+  5094:20250911:064106.667 required mandatory version: 07040000
+  5096:20250911:064106.674 starting HA manager
+  5096:20250911:064106.705 HA manager started in active mode
+  5094:20250911:064106.707 server #0 started [main process]
+  5098:20250911:064106.708 server #1 started [service manager #1]
+  5099:20250911:064106.710 server #2 started [configuration syncer #1]
+  5107:20250911:064107.016 server #3 started [alert manager #1]
+  5108:20250911:064107.019 server #4 started [alerter #1]
+  5110:20250911:064107.020 server #5 started [alerter #2]
+  5111:20250911:064107.022 server #6 started [alerter #3]
+  5112:20250911:064107.023 server #7 started [preprocessing manager #1]
+  5113:20250911:064107.025 server #8 started [lld manager #1]
+  5112:20250911:064107.026 [1] thread started [preprocessing worker #1]
+  5112:20250911:064107.026 [2] thread started [preprocessing worker #2]
+  5112:20250911:064107.026 [4] thread started [preprocessing worker #4]
+  5112:20250911:064107.026 [5] thread started [preprocessing worker #5]
+  5112:20250911:064107.026 [7] thread started [preprocessing worker #7]
+  5112:20250911:064107.026 [8] thread started [preprocessing worker #8]
+  5112:20250911:064107.026 [9] thread started [preprocessing worker #9]
+  5112:20250911:064107.026 [10] thread started [preprocessing worker #10]
+  5112:20250911:064107.026 [11] thread started [preprocessing worker #11]
+  5112:20250911:064107.027 [13] thread started [preprocessing worker #13]
+  5112:20250911:064107.027 [12] thread started [preprocessing worker #12]
+  5112:20250911:064107.027 [15] thread started [preprocessing worker #15]
+  5112:20250911:064107.027 [16] thread started [preprocessing worker #16]
+  5112:20250911:064107.027 [14] thread started [preprocessing worker #14]
+  5112:20250911:064107.027 [3] thread started [preprocessing worker #3]
+  5112:20250911:064107.027 [6] thread started [preprocessing worker #6]
+  5125:20250911:064107.027 server #9 started [lld worker #1]
+  5131:20250911:064107.029 server #10 started [lld worker #2]
+  5133:20250911:064107.033 server #11 started [housekeeper #1]
+  5136:20250911:064107.038 server #12 started [timer #1]
+  5137:20250911:064107.044 server #13 started [http poller #1]
+  5139:20250911:064107.047 server #14 started [browser poller #1]
+  5141:20250911:064107.051 server #15 started [discovery manager #1]
+  5142:20250911:064107.051 server #16 started [history syncer #1]
+  5143:20250911:064107.054 server #17 started [history syncer #2]
+  5145:20250911:064107.059 server #18 started [history syncer #3]
+  5148:20250911:064107.063 server #19 started [history syncer #4]
+  5150:20250911:064107.066 server #20 started [escalator #1]
+  5153:20250911:064107.077 server #21 started [proxy poller #1]
+  5154:20250911:064107.087 server #22 started [self-monitoring #1]
+  5156:20250911:064107.096 server #23 started [task manager #1]
+  5157:20250911:064107.101 server #24 started [poller #1]
+  5159:20250911:064107.112 server #25 started [poller #2]
+  5141:20250911:064107.118 thread started [discovery worker #1]
+  5141:20250911:064107.118 thread started [discovery worker #2]
+  5141:20250911:064107.118 thread started [discovery worker #3]
+  5141:20250911:064107.118 thread started [discovery worker #4]
+  5141:20250911:064107.118 thread started [discovery worker #5]
+  5165:20250911:064107.129 server #26 started [poller #3]
+  5167:20250911:064107.135 server #27 started [poller #4]
+  5168:20250911:064107.136 server #28 started [poller #5]
+  5169:20250911:064107.140 server #29 started [unreachable poller #1]
+  5170:20250911:064107.142 server #30 started [trapper #1]
+  5171:20250911:064107.145 server #31 started [trapper #2]
+  5173:20250911:064107.147 server #32 started [trapper #3]
+  5174:20250911:064107.152 server #33 started [trapper #4]
+  5178:20250911:064107.158 server #34 started [trapper #5]
+  5179:20250911:064107.163 server #35 started [icmp pinger #1]
+  5181:20250911:064107.169 server #36 started [alert syncer #1]
+  5182:20250911:064107.174 server #37 started [history poller #1]
+  5185:20250911:064107.187 server #38 started [history poller #2]
+  5187:20250911:064107.198 server #39 started [history poller #3]
+  5189:20250911:064107.208 server #40 started [history poller #4]
+  5190:20250911:064107.213 server #41 started [history poller #5]
+  5192:20250911:064107.215 server #42 started [availability manager #1]
+  5194:20250911:064107.222 server #43 started [trigger housekeeper #1]
+  5196:20250911:064107.223 server #44 started [odbc poller #1]
+  5197:20250911:064107.228 server #45 started [http agent poller #1]
+  5200:20250911:064107.230 server #46 started [agent poller #1]
+  5200:20250911:064107.234 thread started
+  5197:20250911:064107.237 thread started
+  5202:20250911:064107.241 server #47 started [snmp poller #1]
+  5202:20250911:064107.243 thread started
+  5204:20250911:064107.244 server #48 started [configuration syncer worker #1]
+  5205:20250911:064107.247 server #49 started [internal poller #1]
+  5206:20250911:064107.249 server #50 started [proxy group manager #1]
+  5133:20250911:071107.270 executing housekeeper
+  5133:20250911:071107.601 housekeeper [deleted 50 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.305188 sec, idle for 1 hour(s)]
+  5133:20250911:081107.675 executing housekeeper
+  5133:20250911:081107.726 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.026235 sec, idle for 1 hour(s)]
