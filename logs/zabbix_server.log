@@ -1230,3 +1230,21 @@ connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection re
   5133:20250911:221109.360 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.067612 sec, idle for 1 hour(s)]
   5133:20250911:231109.461 executing housekeeper
   5133:20250911:231109.511 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.025852 sec, idle for 1 hour(s)]
+  5133:20250912:001109.587 executing housekeeper
+  5133:20250912:001109.635 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.022580 sec, idle for 1 hour(s)]
+  5133:20250912:011109.698 executing housekeeper
+  5133:20250912:011109.745 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021923 sec, idle for 1 hour(s)]
+  5133:20250912:021109.827 executing housekeeper
+  5133:20250912:021109.879 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 4 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.027442 sec, idle for 1 hour(s)]
+  5133:20250912:031109.979 executing housekeeper
+  5133:20250912:031110.306 housekeeper [deleted 6314 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 86 audit, 0 autoreg_host, 0 records in 0.300943 sec, idle for 1 hour(s)]
+  5133:20250912:041110.347 executing housekeeper
+  5133:20250912:041110.666 housekeeper [deleted 6784 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.293798 sec, idle for 1 hour(s)]
+  5133:20250912:051110.725 executing housekeeper
+  5133:20250912:051111.034 housekeeper [deleted 6782 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.282603 sec, idle for 1 hour(s)]
+  5133:20250912:061111.043 executing housekeeper
+  5133:20250912:061111.337 housekeeper [deleted 1647 hist/trends, 0 items/triggers, 0 events, 0 problems, 2 sessions, 0 alarms, 1 audit, 0 autoreg_host, 0 records in 0.269608 sec, idle for 1 hour(s)]
+  5133:20250912:071111.427 executing housekeeper
+  5133:20250912:071111.505 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.053539 sec, idle for 1 hour(s)]
+  5133:20250912:081111.528 executing housekeeper
+  5133:20250912:081111.608 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.054075 sec, idle for 1 hour(s)]
