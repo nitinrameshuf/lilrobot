@@ -1,143 +1,257 @@
 #!/usr/bin/env python3
 """
-JX PDI-6225MG-300 Servo Test using libgpiod
-Uses the correct GPIO line numbers from gpioinfo
+GPIO LED Test for Pin 32 debugging
+Tests multiple methods to get GPIO working on Jetson Orin Nano Super
 """
 
 import subprocess
 import time
 import sys
+import os
 
-def run_gpio_command(command):
-    """Run gpio command and handle errors"""
+def run_command(cmd, description=""):
+    """Run a command and return success status and output"""
     try:
-        result = subprocess.run(command, shell=True, check=True, capture_output=True, text=True)
+        print(f"\n{'='*50}")
+        print(f"TESTING: {description}")
+        print(f"Command: {cmd}")
+        print(f"{'='*50}")
+        
+        result = subprocess.run(cmd, shell=True, check=True, capture_output=True, text=True)
+        print("SUCCESS:")
+        print(result.stdout)
         return True, result.stdout
     except subprocess.CalledProcessError as e:
-        return False, f"Error: {e.stderr}"
+        print("FAILED:")
+        print(f"Return code: {e.returncode}")
+        print(f"STDERR: {e.stderr}")
+        print(f"STDOUT: {e.stdout}")
+        return False, e.stderr
 
-def generate_servo_pwm(gpio_line, pulse_width_ms, duration_seconds=3):
-    """Generate PWM signal for servo using gpioset"""
-    print(f"Generating {pulse_width_ms}ms pulses on GPIO line {gpio_line}")
+def test_gpio_lines():
+    """Test different GPIO lines to find which ones work"""
+    print("\n" + "="*60)
+    print("TESTING DIFFERENT GPIO LINES")
+    print("="*60)
     
-    cycles = int(duration_seconds * 50)  # 50Hz = 50 cycles per second
-    period_ms = 20  # 50Hz = 20ms period
-    
-    for i in range(cycles):
-        # HIGH for pulse width
-        run_gpio_command(f"gpioset gpiochip0 {gpio_line}=1")
-        time.sleep(pulse_width_ms / 1000.0)
-        
-        # LOW for remainder of period
-        run_gpio_command(f"gpioset gpiochip0 {gpio_line}=0")
-        time.sleep((period_ms - pulse_width_ms) / 1000.0)
-        
-        # Progress indicator
-        if i % 10 == 0:
-            print(f"  Progress: {i+1}/{cycles}", end='\r')
-    
-    print(f"  Completed: {cycles}/{cycles}")
-
-def test_servo_positions(pin_number, gpio_line):
-    """Test servo at different positions"""
-    print(f"\nTesting servo on Pin {pin_number} (GPIO line {gpio_line})")
-    print("=" * 50)
-    
-    # Test positions: pulse_width_ms, description, angle
-    positions = [
-        (0.5, "Minimum position (0°)"),
-        (1.0, "Quarter position (75°)"),
-        (1.5, "Center position (150°)"),
-        (2.0, "Three-quarter position (225°)"),
-        (2.5, "Maximum position (300°)")
+    # Test lines that showed as "unused output" in gpioinfo
+    test_lines = [
+        (41, "PG.06", "Pin 32 expected mapping"),
+        (49, "PH.06", "Alternative unused output"),  
+        (68, "PK.04", "Another unused output"),
+        (69, "PK.05", "Another unused output"),
+        (103, "PQ.03", "Another unused output"),
+        (138, "PAC.00", "Another unused output")
     ]
     
-    for pulse_ms, description in positions:
-        print(f"\n{description} - {pulse_ms}ms pulse")
-        generate_servo_pwm(gpio_line, pulse_ms, duration_seconds=3)
-        time.sleep(0.5)  # Brief pause between positions
-
-def test_pin_basic_output(pin_number, gpio_line):
-    """Test basic HIGH/LOW output"""
-    print(f"\nTesting basic output on Pin {pin_number} (GPIO line {gpio_line})")
-    print("Check with multimeter - should see 3.3V HIGH, 0V LOW")
+    working_lines = []
     
-    for i in range(5):
-        success, output = run_gpio_command(f"gpioset gpiochip0 {gpio_line}=1")
-        if success:
-            print(f"HIGH {i+1} - should read 3.3V")
-        else:
-            print(f"ERROR setting HIGH: {output}")
-            return False
-        time.sleep(1)
+    for line, name, description in test_lines:
+        print(f"\n--- Testing GPIO line {line} ({name}) - {description} ---")
         
-        success, output = run_gpio_command(f"gpioset gpiochip0 {gpio_line}=0")
+        # Try to set HIGH
+        success, output = run_command(f"gpioset gpiochip0 {line}=1", f"Set line {line} HIGH")
         if success:
-            print(f"LOW {i+1} - should read 0V")
+            print(f"✓ Successfully set line {line} HIGH")
+            print("Check LED - should be ON")
+            input("Press Enter after checking LED...")
+            
+            # Try to set LOW
+            success_low, output_low = run_command(f"gpioset gpiochip0 {line}=0", f"Set line {line} LOW")
+            if success_low:
+                print(f"✓ Successfully set line {line} LOW")
+                print("Check LED - should be OFF")
+                working_lines.append((line, name, description))
+                input("Press Enter after checking LED...")
+            else:
+                print(f"✗ Failed to set line {line} LOW")
         else:
-            print(f"ERROR setting LOW: {output}")
-            return False
-        time.sleep(1)
+            print(f"✗ Failed to set line {line} HIGH")
     
-    return True
+    return working_lines
 
-def main():
-    print("JX PDI-6225MG-300 Servo Test using libgpiod")
-    print("=" * 60)
-    
-    # GPIO mappings from gpioinfo
-    pin_options = {
-        "32": {"gpio_line": 41, "name": "PG.06"},
-        "33": {"gpio_line": 43, "name": "PH.00"}
-    }
-    
-    print("Available pins:")
-    for pin, info in pin_options.items():
-        print(f"  Pin {pin}: GPIO line {info['gpio_line']} ({info['name']})")
-    
-    # Check if gpioset is available
-    success, _ = run_gpio_command("which gpioset")
-    if not success:
-        print("\nERROR: gpioset not found. Install with:")
-        print("sudo apt install gpiod")
-        sys.exit(1)
-    
-    pin_choice = input(f"\nWhich pin is your servo connected to? (32/33): ").strip()
-    
-    if pin_choice not in pin_options:
-        print("Invalid pin choice. Using Pin 33 (recommended)")
-        pin_choice = "33"
-    
-    gpio_line = pin_options[pin_choice]["gpio_line"]
-    gpio_name = pin_options[pin_choice]["name"]
-    
-    print(f"\nUsing Pin {pin_choice}: GPIO line {gpio_line} ({gpio_name})")
-    print("\nEnsure your servo wiring:")
-    print(f"  - Red wire: External 5V power")
-    print(f"  - Brown/Black wire: Common ground (external GND + Jetson Pin 6)")
-    print(f"  - Yellow/Orange wire: Jetson Pin {pin_choice}")
-    
-    input("\nPress Enter to start test...")
+def test_jetson_gpio_library():
+    """Test using Jetson.GPIO library"""
+    print("\n" + "="*60)
+    print("TESTING JETSON.GPIO LIBRARY")
+    print("="*60)
     
     try:
-        # Test 1: Basic GPIO functionality
-        if not test_pin_basic_output(pin_choice, gpio_line):
-            print("Basic GPIO test failed. Check connections.")
-            return
+        # Set environment variable
+        os.environ['JETSON_MODEL_NAME'] = 'JETSON_ORIN_NANO'
         
-        input("\nPress Enter to start servo PWM test...")
+        import Jetson.GPIO as GPIO
+        print("✓ Jetson.GPIO imported successfully")
         
-        # Test 2: Servo PWM test
-        test_servo_positions(pin_choice, gpio_line)
+        # Test Pin 32
+        GPIO.setmode(GPIO.BOARD)
+        GPIO.setup(32, GPIO.OUT)
+        print("✓ Pin 32 configured as output")
         
-        print(f"\n" + "=" * 60)
-        print("Servo test completed!")
-        print("If servo didn't move:")
-        print("1. Check 5V power supply (needs 2A+ capacity)")
-        print("2. Verify common ground connection")
-        print("3. Try the other pin (32 or 33)")
-        print("4. Test servo with known working controller")
-        print("=" * 60)
+        print("Setting Pin 32 HIGH...")
+        GPIO.output(32, GPIO.HIGH)
+        print("Check LED with multimeter - should read 3.3V")
+        input("Press Enter after checking...")
+        
+        print("Setting Pin 32 LOW...")
+        GPIO.output(32, GPIO.LOW)
+        print("Check LED with multimeter - should read 0V")
+        input("Press Enter after checking...")
+        
+        # Test other pins
+        test_pins = [33, 15, 16, 18, 22]  # Other GPIO-capable pins
+        working_pins = []
+        
+        for pin in test_pins:
+            try:
+                print(f"\n--- Testing Pin {pin} ---")
+                GPIO.setup(pin, GPIO.OUT)
+                
+                GPIO.output(pin, GPIO.HIGH)
+                print(f"Pin {pin} set HIGH - check LED")
+                response = input("Did LED turn ON? (y/n): ").lower()
+                
+                GPIO.output(pin, GPIO.LOW)
+                print(f"Pin {pin} set LOW - check LED")
+                
+                if response == 'y':
+                    working_pins.append(pin)
+                    print(f"✓ Pin {pin} works!")
+                else:
+                    print(f"✗ Pin {pin} doesn't work")
+                    
+            except Exception as e:
+                print(f"✗ Pin {pin} failed: {e}")
+        
+        GPIO.cleanup()
+        return True, working_pins
+        
+    except Exception as e:
+        print(f"✗ Jetson.GPIO test failed: {e}")
+        return False, []
+
+def test_hardware_pwm():
+    """Check for hardware PWM devices"""
+    print("\n" + "="*60)
+    print("CHECKING HARDWARE PWM")
+    print("="*60)
+    
+    pwm_paths = [
+        "/sys/class/pwm/",
+        "/sys/devices/3280000.pwm/",
+        "/sys/devices/32c0000.pwm/"
+    ]
+    
+    found_pwm = False
+    for path in pwm_paths:
+        if os.path.exists(path):
+            print(f"✓ Found PWM device: {path}")
+            try:
+                contents = os.listdir(path)
+                print(f"  Contents: {contents}")
+                found_pwm = True
+            except:
+                print(f"  Could not list contents")
+        else:
+            print(f"✗ PWM path not found: {path}")
+    
+    return found_pwm
+
+def check_pin_configuration():
+    """Check current pin configuration and multiplexing"""
+    print("\n" + "="*60)
+    print("CHECKING PIN CONFIGURATION")
+    print("="*60)
+    
+    # Check pinmux configuration
+    pinmux_files = [
+        "/sys/kernel/debug/pinctrl/2430000.pinctrl/pinmux-pins",
+        "/sys/kernel/debug/pinctrl/2430000.pinctrl/pins"
+    ]
+    
+    for file_path in pinmux_files:
+        if os.path.exists(file_path):
+            success, output = run_command(f"sudo cat {file_path} | grep -i 'pg.06\\|ph.00\\|pac.06'", 
+                                        f"Check pinmux for relevant pins in {file_path}")
+            if not success:
+                print("No specific pin info found or grep failed")
+        else:
+            print(f"Pinmux file not found: {file_path}")
+
+def main():
+    print("GPIO LED TEST - JETSON ORIN NANO SUPER")
+    print("="*60)
+    print("LED Setup:")
+    print("- LED + resistor connected to Pin 32")
+    print("- Other end to GND (Pin 6)")
+    print("- Multimeter ready to test voltage")
+    print("="*60)
+    
+    # Check if running with sufficient permissions
+    if os.geteuid() != 0:
+        print("Note: Some tests may require sudo privileges")
+    
+    input("\nPress Enter to start GPIO testing...")
+    
+    results = {
+        "libgpiod_lines": [],
+        "jetson_gpio_pins": [],
+        "pwm_available": False
+    }
+    
+    try:
+        # Test 1: Check pin configuration
+        check_pin_configuration()
+        
+        # Test 2: Hardware PWM check
+        results["pwm_available"] = test_hardware_pwm()
+        
+        # Test 3: Test different GPIO lines with libgpiod
+        print("\n\nMove LED to Pin 32 and test different GPIO lines...")
+        input("Press Enter when LED is connected to Pin 32...")
+        results["libgpiod_lines"] = test_gpio_lines()
+        
+        # Test 4: Test Jetson.GPIO library
+        jetson_success, working_pins = test_jetson_gpio_library()
+        results["jetson_gpio_pins"] = working_pins
+        
+        # Summary
+        print("\n" + "="*60)
+        print("TEST RESULTS SUMMARY")
+        print("="*60)
+        
+        print(f"Hardware PWM available: {results['pwm_available']}")
+        
+        if results["libgpiod_lines"]:
+            print("Working GPIO lines (libgpiod):")
+            for line, name, desc in results["libgpiod_lines"]:
+                print(f"  - Line {line} ({name}): {desc}")
+        else:
+            print("No working GPIO lines found with libgpiod")
+        
+        if results["jetson_gpio_pins"]:
+            print("Working pins (Jetson.GPIO):")
+            for pin in results["jetson_gpio_pins"]:
+                print(f"  - Pin {pin}")
+        else:
+            print("No working pins found with Jetson.GPIO")
+        
+        if results["libgpiod_lines"] or results["jetson_gpio_pins"]:
+            print("\n✓ SUCCESS: Found working GPIO!")
+            if results["jetson_gpio_pins"]:
+                print(f"Recommendation: Use Pin {results['jetson_gpio_pins'][0]} with Jetson.GPIO library")
+            elif results["libgpiod_lines"]:
+                line, name, desc = results["libgpiod_lines"][0]
+                print(f"Recommendation: Use GPIO line {line} with libgpiod")
+        else:
+            print("\n✗ NO WORKING GPIO FOUND")
+            print("Possible issues:")
+            print("- Pin permissions/configuration problem")
+            print("- Hardware issue with board")
+            print("- GPIO already in use by system")
+            print("- Need different pinmux configuration")
+        
+        print("="*60)
         
     except KeyboardInterrupt:
         print("\nTest interrupted by user")
