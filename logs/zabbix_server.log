@@ -1296,3 +1296,9 @@ connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection re
   5133:20250913:071117.398 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.074102 sec, idle for 1 hour(s)]
   5133:20250913:081117.443 executing housekeeper
   5133:20250913:081117.541 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.072985 sec, idle for 1 hour(s)]
+  5133:20250913:091117.635 executing housekeeper
+  5133:20250913:091117.732 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.072264 sec, idle for 1 hour(s)]
+  5133:20250913:101117.832 executing housekeeper
+  5133:20250913:101117.937 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.078168 sec, idle for 1 hour(s)]
+  5133:20250913:111118.036 executing housekeeper
+  5133:20250913:111118.135 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.073657 sec, idle for 1 hour(s)]
