@@ -1,169 +1,148 @@
 #!/usr/bin/env python3
 """
-Servo PWM Signal Test - Focused on PWM generation
-JX PDI-6225MG-300 operates on 4.8V-6.0V (your 5V is fine)
-
-The issue is likely PWM signal generation, not power.
+JX PDI-6225MG-300 Servo Test using libgpiod
+Uses the correct GPIO line numbers from gpioinfo
 """
 
-import os
+import subprocess
 import time
+import sys
 
-# Set environment
-os.environ['JETSON_MODEL_NAME'] = 'JETSON_ORIN_NANO'
-
-def manual_servo_pwm():
-    """Generate servo PWM manually using sysfs"""
-    print("Manual Servo PWM Test")
-    print("=" * 40)
-    
-    gpio_num = 389  # Pin 32 on Jetson Orin Nano
-    
+def run_gpio_command(command):
+    """Run gpio command and handle errors"""
     try:
-        # Setup GPIO
-        os.system(f"echo {gpio_num} | sudo tee /sys/class/gpio/export")
-        time.sleep(0.1)
-        os.system(f"echo out | sudo tee /sys/class/gpio/gpio{gpio_num}/direction")
-        
-        print("Generating servo control signals...")
-        print("Watch your servo for movement!")
-        
-        # Test sequence with different pulse widths
-        test_positions = [
-            (0.5, "Minimum (0°) - 0.5ms pulse"),
-            (1.0, "Low (60°) - 1.0ms pulse"), 
-            (1.5, "Center (150°) - 1.5ms pulse"),
-            (2.0, "High (240°) - 2.0ms pulse"),
-            (2.5, "Maximum (300°) - 2.5ms pulse")
-        ]
-        
-        for pulse_ms, description in test_positions:
-            print(f"\n{description}")
-            
-            # Send PWM for 3 seconds
-            cycles = 150  # 3 seconds at 50Hz
-            for i in range(cycles):
-                # HIGH pulse
-                os.system(f"echo 1 | sudo tee /sys/class/gpio/gpio{gpio_num}/value")
-                time.sleep(pulse_ms / 1000.0)  # Pulse width
-                
-                # LOW for rest of 20ms period
-                os.system(f"echo 0 | sudo tee /sys/class/gpio/gpio{gpio_num}/value")
-                time.sleep((20 - pulse_ms) / 1000.0)  # 50Hz = 20ms period
-                
-                if i % 25 == 0:  # Progress indicator
-                    print(f"  Cycle {i+1}/{cycles}", end='\r')
-            
-            print(f"  ✓ Completed {description}")
-            time.sleep(1)
-        
-        # Cleanup
-        os.system(f"echo {gpio_num} | sudo tee /sys/class/gpio/unexport")
-        print("\n✓ Test completed")
-        
-    except Exception as e:
-        print(f"✗ Error: {e}")
+        result = subprocess.run(command, shell=True, check=True, capture_output=True, text=True)
+        return True, result.stdout
+    except subprocess.CalledProcessError as e:
+        return False, f"Error: {e.stderr}"
 
-def test_with_jetson_gpio():
-    """Test using Jetson.GPIO if available"""
-    print("\nJetson.GPIO PWM Test")
-    print("=" * 40)
+def generate_servo_pwm(gpio_line, pulse_width_ms, duration_seconds=3):
+    """Generate PWM signal for servo using gpioset"""
+    print(f"Generating {pulse_width_ms}ms pulses on GPIO line {gpio_line}")
     
-    try:
-        import Jetson.GPIO as GPIO
+    cycles = int(duration_seconds * 50)  # 50Hz = 50 cycles per second
+    period_ms = 20  # 50Hz = 20ms period
+    
+    for i in range(cycles):
+        # HIGH for pulse width
+        run_gpio_command(f"gpioset gpiochip0 {gpio_line}=1")
+        time.sleep(pulse_width_ms / 1000.0)
         
-        GPIO.setmode(GPIO.BOARD)
-        GPIO.setup(32, GPIO.OUT)
+        # LOW for remainder of period
+        run_gpio_command(f"gpioset gpiochip0 {gpio_line}=0")
+        time.sleep((period_ms - pulse_width_ms) / 1000.0)
         
-        # Create PWM object - 50Hz for servo
-        pwm = GPIO.PWM(32, 50)
-        pwm.start(0)
+        # Progress indicator
+        if i % 10 == 0:
+            print(f"  Progress: {i+1}/{cycles}", end='\r')
+    
+    print(f"  Completed: {cycles}/{cycles}")
+
+def test_servo_positions(pin_number, gpio_line):
+    """Test servo at different positions"""
+    print(f"\nTesting servo on Pin {pin_number} (GPIO line {gpio_line})")
+    print("=" * 50)
+    
+    # Test positions: pulse_width_ms, description, angle
+    positions = [
+        (0.5, "Minimum position (0°)"),
+        (1.0, "Quarter position (75°)"),
+        (1.5, "Center position (150°)"),
+        (2.0, "Three-quarter position (225°)"),
+        (2.5, "Maximum position (300°)")
+    ]
+    
+    for pulse_ms, description in positions:
+        print(f"\n{description} - {pulse_ms}ms pulse")
+        generate_servo_pwm(gpio_line, pulse_ms, duration_seconds=3)
+        time.sleep(0.5)  # Brief pause between positions
+
+def test_pin_basic_output(pin_number, gpio_line):
+    """Test basic HIGH/LOW output"""
+    print(f"\nTesting basic output on Pin {pin_number} (GPIO line {gpio_line})")
+    print("Check with multimeter - should see 3.3V HIGH, 0V LOW")
+    
+    for i in range(5):
+        success, output = run_gpio_command(f"gpioset gpiochip0 {gpio_line}=1")
+        if success:
+            print(f"HIGH {i+1} - should read 3.3V")
+        else:
+            print(f"ERROR setting HIGH: {output}")
+            return False
+        time.sleep(1)
         
-        print("Testing with Jetson.GPIO PWM...")
-        
-        # Test different duty cycles for servo positions
-        # Servo expects 1-2ms pulses in 20ms period (5-10% duty cycle)
-        positions = [
-            (2.5, "Minimum position (0.5ms pulse)"),
-            (5.0, "Low position (1.0ms pulse)"),
-            (7.5, "Center position (1.5ms pulse)"),
-            (10.0, "High position (2.0ms pulse)"), 
-            (12.5, "Maximum position (2.5ms pulse)")
-        ]
-        
-        for duty, description in positions:
-            print(f"{description} - Duty cycle: {duty}%")
-            pwm.ChangeDutyCycle(duty)
-            time.sleep(3)
-        
-        # Stop PWM and cleanup
-        pwm.stop()
-        GPIO.cleanup()
-        print("✓ Jetson.GPIO test completed")
-        
-    except Exception as e:
-        print(f"✗ Jetson.GPIO failed: {e}")
-        return False
+        success, output = run_gpio_command(f"gpioset gpiochip0 {gpio_line}=0")
+        if success:
+            print(f"LOW {i+1} - should read 0V")
+        else:
+            print(f"ERROR setting LOW: {output}")
+            return False
+        time.sleep(1)
     
     return True
 
-def quick_signal_test():
-    """Quick test to verify signal output"""
-    print("\nQuick Signal Test")
-    print("=" * 40)
-    print("Use multimeter on Pin 32 to verify signal")
+def main():
+    print("JX PDI-6225MG-300 Servo Test using libgpiod")
+    print("=" * 60)
     
-    gpio_num = 389
+    # GPIO mappings from gpioinfo
+    pin_options = {
+        "32": {"gpio_line": 41, "name": "PG.06"},
+        "33": {"gpio_line": 43, "name": "PH.00"}
+    }
+    
+    print("Available pins:")
+    for pin, info in pin_options.items():
+        print(f"  Pin {pin}: GPIO line {info['gpio_line']} ({info['name']})")
+    
+    # Check if gpioset is available
+    success, _ = run_gpio_command("which gpioset")
+    if not success:
+        print("\nERROR: gpioset not found. Install with:")
+        print("sudo apt install gpiod")
+        sys.exit(1)
+    
+    pin_choice = input(f"\nWhich pin is your servo connected to? (32/33): ").strip()
+    
+    if pin_choice not in pin_options:
+        print("Invalid pin choice. Using Pin 33 (recommended)")
+        pin_choice = "33"
+    
+    gpio_line = pin_options[pin_choice]["gpio_line"]
+    gpio_name = pin_options[pin_choice]["name"]
+    
+    print(f"\nUsing Pin {pin_choice}: GPIO line {gpio_line} ({gpio_name})")
+    print("\nEnsure your servo wiring:")
+    print(f"  - Red wire: External 5V power")
+    print(f"  - Brown/Black wire: Common ground (external GND + Jetson Pin 6)")
+    print(f"  - Yellow/Orange wire: Jetson Pin {pin_choice}")
+    
+    input("\nPress Enter to start test...")
     
     try:
-        os.system(f"echo {gpio_num} | sudo tee /sys/class/gpio/export")
-        time.sleep(0.1)
-        os.system(f"echo out | sudo tee /sys/class/gpio/gpio{gpio_num}/direction")
+        # Test 1: Basic GPIO functionality
+        if not test_pin_basic_output(pin_choice, gpio_line):
+            print("Basic GPIO test failed. Check connections.")
+            return
         
-        print("Toggling Pin 32 - check with multimeter:")
-        for i in range(10):
-            print(f"HIGH (should read 3.3V)")
-            os.system(f"echo 1 | sudo tee /sys/class/gpio/gpio{gpio_num}/value")
-            time.sleep(1)
-            
-            print(f"LOW (should read 0V)")  
-            os.system(f"echo 0 | sudo tee /sys/class/gpio/gpio{gpio_num}/value")
-            time.sleep(1)
+        input("\nPress Enter to start servo PWM test...")
         
-        os.system(f"echo {gpio_num} | sudo tee /sys/class/gpio/unexport")
+        # Test 2: Servo PWM test
+        test_servo_positions(pin_choice, gpio_line)
         
+        print(f"\n" + "=" * 60)
+        print("Servo test completed!")
+        print("If servo didn't move:")
+        print("1. Check 5V power supply (needs 2A+ capacity)")
+        print("2. Verify common ground connection")
+        print("3. Try the other pin (32 or 33)")
+        print("4. Test servo with known working controller")
+        print("=" * 60)
+        
+    except KeyboardInterrupt:
+        print("\nTest interrupted by user")
     except Exception as e:
-        print(f"✗ Signal test failed: {e}")
-
-def main():
-    print("JX PDI-6225MG-300 Servo PWM Test")
-    print("=" * 50)
-    print("Servo specs: 4.8V-6.0V (your 5V is fine)")
-    print("Pulse width: 500μs-2500μs") 
-    print("Max angle: 300°")
-    print("=" * 50)
-    
-    print("\nWiring check:")
-    print("- Red wire → 5V external power ✓")
-    print("- Brown/Black wire → GND (power + Jetson Pin 6) ✓") 
-    print("- Yellow wire → Jetson Pin 32 ✓")
-    
-    choice = input("\nSelect test:\n1. Manual PWM (recommended)\n2. Jetson.GPIO PWM\n3. Quick signal test\n4. All tests\nChoice (1-4): ")
-    
-    if choice == "1":
-        manual_servo_pwm()
-    elif choice == "2":
-        test_with_jetson_gpio()
-    elif choice == "3":
-        quick_signal_test()
-    elif choice == "4":
-        quick_signal_test()
-        input("\nPress Enter to continue to manual PWM test...")
-        manual_servo_pwm()
-        input("\nPress Enter to continue to Jetson.GPIO test...")
-        test_with_jetson_gpio()
-    else:
-        print("Invalid choice")
+        print(f"Test failed with error: {e}")
 
 if __name__ == "__main__":
     main()
