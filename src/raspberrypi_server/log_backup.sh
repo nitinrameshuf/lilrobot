@@ -4,6 +4,7 @@
 # ==== CONFIGURATION ====
 LOG_FILES="/var/log/zabbix/zabbix_server.log"
 TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
+LILROBOT="/home/ubuntu/lilrobot"
 
 cd "$LILROBOT/logs" || exit 1
 find . -type f -name "zabbix_server.log" -delete
