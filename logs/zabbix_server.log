@@ -112,3 +112,9 @@
   5133:20250916:071130.567 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.042030 sec, idle for 1 hour(s)]
   5133:20250916:081130.651 executing housekeeper
   5133:20250916:081130.720 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.042995 sec, idle for 1 hour(s)]
+  5133:20250916:091130.757 executing housekeeper
+  5133:20250916:091130.824 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.042386 sec, idle for 1 hour(s)]
+  5133:20250916:101130.890 executing housekeeper
+  5133:20250916:101130.957 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.042469 sec, idle for 1 hour(s)]
+  5133:20250916:111131.011 executing housekeeper
+  5133:20250916:111131.079 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.042979 sec, idle for 1 hour(s)]
