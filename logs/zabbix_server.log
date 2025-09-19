@@ -324,3 +324,9 @@
   1082:20250918:191910.184 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.027219 sec, idle for 1 hour(s)]
   1082:20250918:201910.257 executing housekeeper
   1082:20250918:201910.307 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.024224 sec, idle for 1 hour(s)]
+  1082:20250918:211910.354 executing housekeeper
+  1082:20250918:211910.402 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.023057 sec, idle for 1 hour(s)]
+  1082:20250918:221910.469 executing housekeeper
+  1082:20250918:221910.519 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.025550 sec, idle for 1 hour(s)]
+  1082:20250918:231910.620 executing housekeeper
+  1082:20250918:231910.669 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.024469 sec, idle for 1 hour(s)]
