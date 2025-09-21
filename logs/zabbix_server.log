@@ -127,3 +127,104 @@
   1081:20250921:160044.186 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.025388 sec, idle for 1 hour(s)]
   1081:20250921:170044.285 executing housekeeper
   1081:20250921:170044.331 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021755 sec, idle for 1 hour(s)]
+  1081:20250921:180044.426 executing housekeeper
+  1081:20250921:180044.476 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.025665 sec, idle for 1 hour(s)]
+  1081:20250921:190044.501 executing housekeeper
+  1081:20250921:190044.550 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.023748 sec, idle for 1 hour(s)]
+  1036:20250921:192046.262 Starting Zabbix Server. Zabbix 7.4.2 (revision 7aa4e0782fe).
+  1036:20250921:192046.263 ****** Enabled features ******
+  1036:20250921:192046.263 SNMP monitoring:           YES
+  1036:20250921:192046.263 IPMI monitoring:           YES
+  1036:20250921:192046.263 Web monitoring:            YES
+  1036:20250921:192046.263 VMware monitoring:         YES
+  1036:20250921:192046.263 SMTP authentication:       YES
+  1036:20250921:192046.263 ODBC:                      YES
+  1036:20250921:192046.263 SSH support:               YES
+  1036:20250921:192046.263 IPv6 support:              YES
+  1036:20250921:192046.263 TLS support:               YES
+  1036:20250921:192046.263 ******************************
+  1036:20250921:192046.263 using configuration file: /etc/zabbix/zabbix_server.conf
+  1036:20250921:192046.515 current database version (mandatory/optional): 07040000/07040000
+  1036:20250921:192046.515 required mandatory version: 07040000
+  1042:20250921:192046.541 starting HA manager
+  1042:20250921:192046.579 HA manager started in active mode
+  1036:20250921:192046.585 server #0 started [main process]
+  1044:20250921:192046.587 server #1 started [service manager #1]
+  1045:20250921:192046.588 server #2 started [configuration syncer #1]
+  1054:20250921:192047.313 server #3 started [alert manager #1]
+  1055:20250921:192047.315 server #4 started [alerter #1]
+  1057:20250921:192047.316 server #5 started [alerter #2]
+  1058:20250921:192047.318 server #6 started [alerter #3]
+  1059:20250921:192047.320 server #7 started [preprocessing manager #1]
+  1060:20250921:192047.321 server #8 started [lld manager #1]
+  1059:20250921:192047.322 [1] thread started [preprocessing worker #1]
+  1059:20250921:192047.322 [3] thread started [preprocessing worker #3]
+  1059:20250921:192047.322 [4] thread started [preprocessing worker #4]
+  1059:20250921:192047.322 [5] thread started [preprocessing worker #5]
+  1059:20250921:192047.322 [2] thread started [preprocessing worker #2]
+  1059:20250921:192047.322 [8] thread started [preprocessing worker #8]
+  1059:20250921:192047.322 [6] thread started [preprocessing worker #6]
+  1059:20250921:192047.323 [7] thread started [preprocessing worker #7]
+  1059:20250921:192047.323 [11] thread started [preprocessing worker #11]
+  1059:20250921:192047.323 [13] thread started [preprocessing worker #13]
+  1059:20250921:192047.323 [15] thread started [preprocessing worker #15]
+  1059:20250921:192047.323 [14] thread started [preprocessing worker #14]
+  1059:20250921:192047.323 [12] thread started [preprocessing worker #12]
+  1059:20250921:192047.323 [16] thread started [preprocessing worker #16]
+  1059:20250921:192047.323 [9] thread started [preprocessing worker #9]
+  1059:20250921:192047.324 [10] thread started [preprocessing worker #10]
+  1071:20250921:192047.324 server #9 started [lld worker #1]
+  1078:20250921:192047.326 server #10 started [lld worker #2]
+  1081:20250921:192047.330 server #11 started [housekeeper #1]
+  1082:20250921:192047.333 server #12 started [timer #1]
+  1084:20250921:192047.341 server #13 started [http poller #1]
+  1086:20250921:192047.350 server #14 started [browser poller #1]
+  1088:20250921:192047.358 server #15 started [discovery manager #1]
+  1089:20250921:192047.359 server #16 started [history syncer #1]
+  1090:20250921:192047.362 server #17 started [history syncer #2]
+  1093:20250921:192047.368 server #18 started [history syncer #3]
+  1097:20250921:192047.392 server #19 started [history syncer #4]
+  1101:20250921:192047.405 server #22 started [self-monitoring #1]
+  1103:20250921:192047.410 server #24 started [poller #1]
+  1100:20250921:192047.410 server #21 started [proxy poller #1]
+  1099:20250921:192047.410 server #20 started [escalator #1]
+  1102:20250921:192047.414 server #23 started [task manager #1]
+  1105:20250921:192047.416 server #25 started [poller #2]
+  1107:20250921:192047.423 server #26 started [poller #3]
+  1109:20250921:192047.428 server #27 started [poller #4]
+  1110:20250921:192047.434 server #28 started [poller #5]
+  1111:20250921:192047.438 server #29 started [unreachable poller #1]
+  1112:20250921:192047.442 server #30 started [trapper #1]
+  1114:20250921:192047.446 server #31 started [trapper #2]
+  1115:20250921:192047.449 server #32 started [trapper #3]
+  1117:20250921:192047.453 server #33 started [trapper #4]
+  1120:20250921:192047.465 server #34 started [trapper #5]
+  1122:20250921:192047.475 server #35 started [icmp pinger #1]
+  1088:20250921:192047.477 thread started [discovery worker #4]
+  1088:20250921:192047.478 thread started [discovery worker #5]
+  1088:20250921:192047.478 thread started [discovery worker #1]
+  1088:20250921:192047.480 thread started [discovery worker #2]
+  1088:20250921:192047.481 thread started [discovery worker #3]
+  1123:20250921:192047.481 server #36 started [alert syncer #1]
+  1129:20250921:192047.483 server #37 started [history poller #1]
+  1130:20250921:192047.488 server #38 started [history poller #2]
+  1132:20250921:192047.489 server #39 started [history poller #3]
+  1136:20250921:192047.499 server #40 started [history poller #4]
+  1137:20250921:192047.503 server #41 started [history poller #5]
+  1139:20250921:192047.510 server #42 started [availability manager #1]
+  1142:20250921:192047.528 server #43 started [trigger housekeeper #1]
+  1144:20250921:192047.531 server #44 started [odbc poller #1]
+  1145:20250921:192047.543 server #45 started [http agent poller #1]
+  1148:20250921:192047.544 server #48 started [configuration syncer worker #1]
+  1145:20250921:192047.546 thread started
+  1147:20250921:192047.547 server #47 started [snmp poller #1]
+  1146:20250921:192047.548 server #46 started [agent poller #1]
+  1150:20250921:192047.549 server #49 started [internal poller #1]
+  1147:20250921:192047.549 thread started
+  1154:20250921:192047.552 server #50 started [proxy group manager #1]
+  1146:20250921:192047.553 thread started
+  1081:20250921:195217.089 executing housekeeper
+  1081:20250921:195220.636 slow query: 3.521531 sec, "select itemid,min(clock) from history group by itemid"
+  1081:20250921:195222.035 housekeeper [deleted 51 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 4.921430 sec, idle for 1 hour(s)]
+  1081:20250921:205222.089 executing housekeeper
+  1081:20250921:205222.148 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.029291 sec, idle for 1 hour(s)]
