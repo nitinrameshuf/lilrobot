@@ -234,3 +234,21 @@
   1081:20250921:225222.371 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.026623 sec, idle for 1 hour(s)]
   1081:20250921:235222.472 executing housekeeper
   1081:20250921:235222.518 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021652 sec, idle for 1 hour(s)]
+  1081:20250922:005222.529 executing housekeeper
+  1081:20250922:005222.576 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.022579 sec, idle for 1 hour(s)]
+  1081:20250922:015222.640 executing housekeeper
+  1081:20250922:015222.688 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.023443 sec, idle for 1 hour(s)]
+  1081:20250922:025222.763 executing housekeeper
+  1081:20250922:025222.817 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 1 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.028409 sec, idle for 1 hour(s)]
+  1081:20250922:035222.832 executing housekeeper
+  1081:20250922:035222.882 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.025283 sec, idle for 1 hour(s)]
+  1081:20250922:045222.982 executing housekeeper
+  1081:20250922:045223.028 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021994 sec, idle for 1 hour(s)]
+  1081:20250922:055223.129 executing housekeeper
+  1081:20250922:055223.178 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.025233 sec, idle for 1 hour(s)]
+  1081:20250922:065223.194 executing housekeeper
+  1081:20250922:065223.243 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.022532 sec, idle for 1 hour(s)]
+  1081:20250922:075223.333 executing housekeeper
+  1081:20250922:075223.384 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.025269 sec, idle for 1 hour(s)]
+  1081:20250922:085223.426 executing housekeeper
+  1081:20250922:085223.476 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.024415 sec, idle for 1 hour(s)]
