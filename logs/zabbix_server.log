@@ -228,3 +228,9 @@
   1081:20250921:195222.035 housekeeper [deleted 51 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 4.921430 sec, idle for 1 hour(s)]
   1081:20250921:205222.089 executing housekeeper
   1081:20250921:205222.148 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.029291 sec, idle for 1 hour(s)]
+  1081:20250921:215222.247 executing housekeeper
+  1081:20250921:215222.296 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.022666 sec, idle for 1 hour(s)]
+  1081:20250921:225222.320 executing housekeeper
+  1081:20250921:225222.371 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.026623 sec, idle for 1 hour(s)]
+  1081:20250921:235222.472 executing housekeeper
+  1081:20250921:235222.518 housekeeper [deleted 60 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.021652 sec, idle for 1 hour(s)]
