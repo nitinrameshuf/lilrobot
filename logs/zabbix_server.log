@@ -601,3 +601,21 @@ connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection re
  25537:20250925:221547.199 housekeeper [deleted 6784 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.671655 sec, idle for 1 hour(s)]
  25537:20250925:231547.299 executing housekeeper
  25537:20250925:231547.967 housekeeper [deleted 6783 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.642520 sec, idle for 1 hour(s)]
+ 25537:20250926:001547.976 executing housekeeper
+ 25537:20250926:001548.700 housekeeper [deleted 6782 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.698181 sec, idle for 1 hour(s)]
+ 25537:20250926:011548.800 executing housekeeper
+ 25537:20250926:011549.500 housekeeper [deleted 6783 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.674802 sec, idle for 1 hour(s)]
+ 25537:20250926:021549.513 executing housekeeper
+ 25537:20250926:021550.274 housekeeper [deleted 6786 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.735794 sec, idle for 1 hour(s)]
+ 25537:20250926:031550.360 executing housekeeper
+ 25537:20250926:031551.066 housekeeper [deleted 6784 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.681516 sec, idle for 1 hour(s)]
+ 25537:20250926:041551.088 executing housekeeper
+ 25537:20250926:041551.814 housekeeper [deleted 6784 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.701171 sec, idle for 1 hour(s)]
+ 25537:20250926:051551.910 executing housekeeper
+ 25537:20250926:051552.658 housekeeper [deleted 6782 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.722971 sec, idle for 1 hour(s)]
+ 25537:20250926:061552.667 executing housekeeper
+ 25537:20250926:061553.405 housekeeper [deleted 6785 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.712420 sec, idle for 1 hour(s)]
+ 25537:20250926:071553.505 executing housekeeper
+ 25537:20250926:071554.326 housekeeper [deleted 6792 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.796217 sec, idle for 1 hour(s)]
+ 25537:20250926:081554.328 executing housekeeper
+ 25537:20250926:081555.117 housekeeper [deleted 6793 hist/trends, 0 items/triggers, 0 events, 0 problems, 0 sessions, 0 alarms, 0 audit, 0 autoreg_host, 0 records in 0.763345 sec, idle for 1 hour(s)]
